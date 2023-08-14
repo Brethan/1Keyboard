@@ -19,6 +19,8 @@ import com.fazecast.jSerialComm.SerialPort;
  */
 public class BoxRenderer extends DefaultListCellRenderer {
 
+	private static final long serialVersionUID = 1781193690766706725L;
+
 	@Override
 	public Component getListCellRendererComponent(JList<?> list, Object value, int index,
 			boolean isSelected, boolean cellHasFocus) {
