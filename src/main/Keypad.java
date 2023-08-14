@@ -38,7 +38,16 @@ import com.fazecast.jSerialComm.SerialPort;
  * @author Ethan Bradley
  */
 public class Keypad {
-
+	
+	public static void main(String[] args) {
+		try {
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+			new Keypad();
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
+	}
+	
 	private JFrame frmKeypadController;
 	
 	public JFrame getFrame() {

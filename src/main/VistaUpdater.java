@@ -46,7 +46,6 @@ public class VistaUpdater extends JFrame {
 
 	public static void main(String[] args) {
 		try {
-			System.out.println(System.getProperty("java.version"));
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 			VistaUpdater p = new VistaUpdater();
 			JTextArea area = p.getTextArea();
