@@ -22,7 +22,7 @@ unsigned char keyChar;
 char keys[ROWS][COLS] = {{'a'}};
 
 byte rowPins[ROWS] = {10};
-byte colPins[COLS] = {9};
+byte colPins[COLS] = {3};
 
 Keypad keypad = Keypad(makeKeymap(keys), rowPins, colPins, ROWS, COLS);
 
