@@ -2,7 +2,17 @@
 Development of a one key keyboard using the Xiao Seeeduino, an ARM Cortex-M0+ based micro-controller board (which isn't yet supported by QMK)
 
 ![](img/1keyboard.jpg)
-
+<!-- TODO: Add some more pictures, no one reads anymore. -->
+## Sections
+- [1Keyboard](#1keyboard)
+  - [Sections](#sections)
+  - [Assembly](#assembly)
+    - [Wiring](#wiring)
+    - [Fastening](#fastening)
+  - [Model Design](#model-design)
+  - [Programming](#programming)
+  - [Remapping](#remapping)
+    - [Resources Used](#resources-used)
 ## Assembly
 Fortunately, as this is a keyboard with only one key, the assembly is very simple given that you have the following materials:
 1. A somewhat dialed in 3D Printer + your filament of choice
@@ -29,7 +39,7 @@ Break off the corresponding tabs in the bottom body of the 1Keyboard
 
 Cut any extruding wire / solder from underneath the Xiao board and push it into the remaining tabs in the bottom body. Join the bodies of the 1Keyboard using pressure from your fingers and begin to screw the M2 screws into the provided holes.
 
-### Model Design
+## Model Design
 
 Ordinarily, there would be too much empty space in the top of the 1Keyboard body for the Xiao board to sit flat when connected to the computer. This problem was circumvented by adding some tabs that extended down to the Xiao board.
 
@@ -37,7 +47,7 @@ Ordinarily, there would be too much empty space in the top of the 1Keyboard body
 ![XZ Cross Section](img/cross%20section%20xz.png)
 
 The tabs push down on the board at the USB-C connected and on top of the MCU enclosure. The prevents any rotation of the board inside of the body.
-### Programming
+## Programming
 Programming is done in the Arduino IDE.
 
 The following Libraries are required:
@@ -71,7 +81,7 @@ Click the upload button and the programmer should set the board to bootloader mo
 
 If all goes well you should now be able to use your 1Keyboard as a fully functioning 1% keyboard!
 
-### Remapping
+## Remapping
 The 1Keyboard is set to the 'Delete' key by default. If this is undesirable for you, you could always change the keycode in the firmware, but this could be inconvenient for a multitude of reasons (You may have to double short the RST pin to ground which would require you to disassemble the 1Keyboard).
 
 Alternatively, you can download the [Latest KeypadController Release](https://github.com/Brethan/1Keyboard/releases). This will allow you to remap the 1Keyboard to whatever key you'd like as well as a list of special characters.
@@ -82,6 +92,5 @@ Please note that this requires [JDK 17 or later](https://www.oracle.com/java/tec
 [Reference Model For Seeeduino Xiao](https://grabcad.com/library/seeeduino-xiao-2)  
 [Reference Model for Cherry MX Switch](https://grabcad.com/library/cherry-mx-switch-5)
 
-
-#
+---
 Copyright (c) 2023 Ethan "steve" Bradley
