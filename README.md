@@ -77,3 +77,11 @@ The 1Keyboard is set to the 'Delete' key by default. If this is undesirable for 
 Alternatively, you can download the [Latest KeypadController Release](https://github.com/Brethan/1Keyboard/releases). This will allow you to remap the 1Keyboard to whatever key you'd like as well as a list of special characters.
 
 Please note that this requires [JDK 17 or later](https://www.oracle.com/java/technologies/downloads/#java17) to run.
+
+### Resources Used
+[Reference Model For Seeeduino Xiao](https://grabcad.com/library/seeeduino-xiao-2)  
+[Reference Model for Cherry MX Switch](https://grabcad.com/library/cherry-mx-switch-5)
+
+
+#
+Copyright (c) 2023 Ethan "steve" Bradley
